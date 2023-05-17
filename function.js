@@ -17,5 +17,28 @@ function stringLength(string) {
     return revString.join('');
   }
   
+  class Calculator {
+    add (x,y) {
+      return x+y;
+    }
+    
+    subtract (x,y){
+      return x-y;
+    }
+    
+    divide (x,y) {
+      return x/y;
+    }
+      
+    multiply (x,y) {
+      return x*y;
+    }
+    }
 
-  module.exports = {stringLength, reverseString};
+    function capitalize(string) {
+    const firstChar = string.charAt(0).toUpperCase();
+    const remainingStr = string.slice(1);
+    return firstChar + remainingStr;
+    }
+
+  module.exports = {stringLength, reverseString, Calculator, capitalize};
